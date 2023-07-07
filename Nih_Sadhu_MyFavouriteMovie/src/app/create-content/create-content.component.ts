@@ -71,6 +71,10 @@ export class CreateContentComponent {
 
   validateFields(): boolean {
     //  required fields validation based on filed validation
+    console.log(this.newContent.id);
+    console.log(this.newContent.title);
+    console.log(this.newContent.description);
+    console.log(this.newContent.creator);
     return (
       this.newContent.id != null &&
       this.newContent.title.trim() !== '' &&
