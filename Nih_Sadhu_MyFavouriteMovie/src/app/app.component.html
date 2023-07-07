@@ -1,4 +1,4 @@
-
+<!-- 
 <style>
 
 
@@ -10,9 +10,19 @@
 
 </style>
 
-<!-- My Component -->
+ My Component -->
 
-<app-content-list></app-content-list>
+<!-- <app-content-list></app-content-list> -->
 
 
-
+<div>
+    <label for="itemIdInput">Enter Item ID:</label>
+    <input type="text" id="itemIdInput" [(ngModel)]="userInputId" placeholder="Enter ID" />
+    <button (click)="onRetrieveContent()">Get Content</button>
+    <p class="error-message">{{ errorMessage }}</p>
+  </div>
+  <app-content-list></app-content-list>
+  <app-content-card ></app-content-card>
+  
+  
+  
