@@ -8,6 +8,10 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { TypeFilterPipe } from './type-filter.pipe';
 import { HoverAffectDirective } from './hover-affect.directive';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
+import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -19,7 +23,10 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
     ContentListComponent,
     TypeFilterPipe,
     HoverAffectDirective,
-    ModifyContentComponent
+    ModifyContentComponent,
+    AddContentDialogComponent,
+    MatButtonModule,
+      MatInputModule
   ],
   imports: [
     BrowserModule,
