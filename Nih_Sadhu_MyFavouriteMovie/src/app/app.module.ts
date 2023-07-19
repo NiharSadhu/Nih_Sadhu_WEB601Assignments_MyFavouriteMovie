@@ -10,8 +10,15 @@ import { HoverAffectDirective } from './hover-affect.directive';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
 import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
 
+// Assignment 8
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+
+// Assignment 9
+import { AppRoutingModule } from './app-routing.module';
+
+
 
 
 
@@ -26,7 +33,9 @@ import { MatButtonModule } from '@angular/material/button';
     ModifyContentComponent,
     AddContentDialogComponent,
     MatButtonModule,
-      MatInputModule
+      MatInputModule,
+      ContentDetailComponent,
+      AppRoutingModule
   ],
   imports: [
     BrowserModule,

@@ -40,6 +40,10 @@
   <div class="tags" *ngIf="content.tags && content.tags.length > 0">
     <p *ngFor="let tag of content.tags">Tag: {{ tag }}</p>
   </div>
+
+
+  <!-- route -->
+  <a [routerLink]="['/detail', content.id]">View Details</a>
 </div>
 
 <!-- <div class="content-card">
